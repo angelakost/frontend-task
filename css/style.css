@@ -178,6 +178,16 @@ body{
     background-color: #4eaede;
     border: 1px solid #8b8bef;
     color: #fff;
+    transition-duration: 0.3s;
+}
+
+.custom-button:hover {
+    opacity: 0.8;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.custom-button:active {
+   background-color: #4eaede;
 }
 
 .fa-globe{
