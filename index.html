@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Frontend Task CV</title>
+</head>
+<body onload="defaultView()">
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <a href="#" class="menu-toggle"><i class="fa fa-bars"></i></a>
+            
+            <div class="menu-wrapper mobile h-100 grey-shadow col-md-3 p-20">
+                    <div class="head">
+                        <img src="./images/my photo.jpg" class="image-circle grey-shadow">
+                        <h3 class="cv-name bold-text">Angela Kaevikj</h3>
+                        <h4>FRONTEND DEVELOPER</h4>
+                    </div>
+                
+                
+                    <div class="nav-wrapper">
+                        <a class="menu-link" onclick="showContent(event ,'About')" href="#">About me</a>
+                        <a class="menu-link" onclick="showContent(event, 'CV')"   href="#">My CV</a>
+                        <div class="projects-sub-menu" href="#">
+                            <button class="projects-button"> Projects <i class="fa fa-caret-down"></i></button>
+                                <div class="projects-content">
+                                    <a href="#">Web Development</a>
+                                    <a href="#">UI/UX Design</a>
+                                    <a href="#">Photography</a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="social-media-wrapper">
+                        <a class="linkedin-button social-media-button" href="https://www.linkedin.com/in/angela-kaevikj-79501067/" ></a>
+                        <a class="facebook-button social-media-button" href="#" ></a>
+                        <a class="instagram-button social-media-button" href="#" ></a>
+                    </div>
+            </div>
+
+            <div class="col-md-9 h-100 p-20">
+                <div class="content-wrapper h-100 grey-shadow">
+
+                    <div id="About" class="menu-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>About me</h2>
+                            </div>
+
+                            <div class="col-md-8">
+                                <h3>Brief introduction</h3>
+                                <div class="box">
+                                    <h4>Born: 19.10.1993 Skopje, Republic of Macedonia</h4>
+                                </div>
+
+                                <div class="box">
+                                    <h4>Mail: angela.kaevikj@gmail.com</h4>
+                                </div>
+
+                                <div class="box">
+                                    <h4>Phone: +389 71 388 935</h4>
+                                </div>
+
+                                <p class="box brief-info">Passionate driven professional, with a focus on the highest achievements.
+                                    Design and creativity in every aspect of life, have always been my focus. 
+                                    Trough my working experience I have developed a sharp logical perception 
+                                    of the things, in the process of problem-solving. 
+                                    I combine my engineering experience and my creativity in order to create
+                                    the best possible software, that will have both aesthetic and functional characteristics.
+                                    Ariculate with great communicational skills.
+                                </p>
+                            </div>
+
+                            <div class="col-md-12 custom-button-wrapper">
+                                <button
+                                class="custom-button secure-mail" 
+                                href="#"
+                                data-name="info"
+                                data-domain="codeflair"
+                                data-tld="ch"
+                                onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                    Hello World
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="CV" class="menu-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>My CV</h2>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="basic-info-wrapper col-md-6">
+                                    <h3 class="bold-text">Personal Information</h3>
+                                    <div class="box">
+                                        <h4>Degree: Bachelor of Computer Science and Engineering</h4>
+                                    </div>
+            
+                                    <div class="box">
+                                        <h4>Phone: +389 71 388 935</h4>
+                                    </div>
+    
+                                    <div class="box">
+                                        <h4>Mail: angela.kaevikj@gmail.com</h4>
+                                    </div>
+                                </div>
+    
+                                <div class="basic-info-wrapper col-md-6">
+                                    <h3 class="bold-text">Education</h3>
+                                    <div class="box">
+                                        <h4>High School "Orce Nikolov"</h4>
+                                        <p>2008-2012</p>
+                                    </div>
+            
+                                    <div class="box">
+                                        <h4>Faculty of Computer Science and Engineering</h4>
+                                        <p>2012-2017</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="col-md-12">
+                                <div class="basic-info-wrapper col-md-6">
+                                    <h3 class="bold-text">Experience</h3>
+                                    <div class="box">
+                                        <h4>Dept</h4>
+                                        <h4>Frontend Developer</h4>
+                                        <p>2 years</p>
+                                        
+                                    </div>
+            
+                                    <div class="box">
+                                        <h4>Asseco</h4>
+                                        <h4>Software Engineer</h4>
+                                        <p>1 year</p>
+                                    </div>
+                                </div>
+    
+                                <div class="basic-info-wrapper col-md-6">
+                                    <h3 class="bold-text">Programming Skills</h3>
+                                    <div class="pill">
+                                        <h4>HTML</h4>
+                                    </div>
+                                    <div class="pill">
+                                        <h4>CSS</h4>
+                                    </div>
+    
+                                    <div class="pill">
+                                        <h4>JavaScript</h4>
+                                    </div>
+    
+                                    <div class="pill">
+                                        <h4>VUE</h4>
+                                    </div>
+    
+                                    <div class="pill">
+                                        <h4>Angular</h4>
+                                    </div>
+    
+                                    <div class="pill">
+                                        <h4>React</h4>
+                                    </div>
+    
+                                    <div class="pill">
+                                        <h4>Node</h4>
+                                    </div>
+    
+                                    <div class="pill">
+                                        <h4>npm</h4>
+                                    </div>
+    
+                                    <div class="pill">
+                                        <h4>AEM</h4>
+                                    </div>
+    
+                                    <div class="pill">
+                                        <h4>Bootstrap</h4>
+                                    </div>
+    
+                                    <div class="pill">
+                                        <h4>Word Press</h4>
+                                    </div>
+    
+                                    <div class="pill">
+                                        <h4>GIT</h4>
+                                    </div>
+
+                                    <div class="pill">
+                                        <h4>Jira</h4>
+                                    </div>
+
+                                    <div class="pill">
+                                        <h4>JQuery</h4>
+                                    </div>
+
+                                    <div class="pill">
+                                        <h4>Magnolia</h4>
+                                    </div>
+
+                                    <div class="pill">
+                                        <h4>Less</h4>
+                                    </div>
+
+                                    <div class="pill">
+                                        <h4>Sass</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
